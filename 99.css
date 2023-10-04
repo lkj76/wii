@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b3babe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #1daf47;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow:  10px 10px 30px #636060,
+             -10px -10px 24px #636060;
+    width: 300px;
+    text-align: center;
+    opacity: 0; /* Add opacity for fade-in animation */
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1da1f2;
+    font-size: 26px;
+}
+
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: .5rem 4rem;
+    margin: 1rem 0;
+    background-color: #f8f9fa;
+    color: #110f0f;
+    border: 2px solid #0b0c0c;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out, transform 0.2s;
+
+}
+
+button img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #4eb4eb;
+    transform: scale(1.1); /* Add scaling effect on hover */
+}
+
+.social-signin {
+    margin-bottom: 20px;
+}
+
+#forgotPassword {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0d0d0e;
+    font-size: 14px;
+}
+
+#forgotPassword a {
+    color: #080808;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+#forgotPassword a:hover {
+    color: #5fb5e0;
+}
+
+#signUp {
+    background-color: #fff;
+    border: none;
+    color: #080808;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+#signUp:hover {
+    color: #0d8bd0;
+}
+
